@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ED2F418-3996-478C-AD45-32FAFD4187BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HackerConsole</RootNamespace>
+    <AssemblyName>HackerConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Console.cs" />
+    <Compile Include="ICommandScript.cs" />
+    <Compile Include="IConsole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptCompiler.cs" />
+    <Compile Include="SFML\Audio\Listener.cs" />
+    <Compile Include="SFML\Audio\Music.cs" />
+    <Compile Include="SFML\Audio\Sound.cs" />
+    <Compile Include="SFML\Audio\SoundBuffer.cs" />
+    <Compile Include="SFML\Audio\SoundBufferRecorder.cs" />
+    <Compile Include="SFML\Audio\SoundRecorder.cs" />
+    <Compile Include="SFML\Audio\SoundStream.cs" />
+    <Compile Include="SFML\Graphics\BlendMode.cs" />
+    <Compile Include="SFML\Graphics\CircleShape.cs" />
+    <Compile Include="SFML\Graphics\Color.cs" />
+    <Compile Include="SFML\Graphics\Context.cs" />
+    <Compile Include="SFML\Graphics\ConvexShape.cs" />
+    <Compile Include="SFML\Graphics\Drawable.cs" />
+    <Compile Include="SFML\Graphics\Font.cs" />
+    <Compile Include="SFML\Graphics\Glyph.cs" />
+    <Compile Include="SFML\Graphics\Image.cs" />
+    <Compile Include="SFML\Graphics\PrimitiveType.cs" />
+    <Compile Include="SFML\Graphics\Rect.cs" />
+    <Compile Include="SFML\Graphics\RectangleShape.cs" />
+    <Compile Include="SFML\Graphics\RenderStates.cs" />
+    <Compile Include="SFML\Graphics\RenderTarget.cs" />
+    <Compile Include="SFML\Graphics\RenderTexture.cs" />
+    <Compile Include="SFML\Graphics\RenderWindow.cs" />
+    <Compile Include="SFML\Graphics\Shader.cs" />
+    <Compile Include="SFML\Graphics\Shape.cs" />
+    <Compile Include="SFML\Graphics\Sprite.cs" />
+    <Compile Include="SFML\Graphics\Text.cs" />
+    <Compile Include="SFML\Graphics\Texture.cs" />
+    <Compile Include="SFML\Graphics\Transform.cs" />
+    <Compile Include="SFML\Graphics\Transformable.cs" />
+    <Compile Include="SFML\Graphics\Vertex.cs" />
+    <Compile Include="SFML\Graphics\VertexArray.cs" />
+    <Compile Include="SFML\Graphics\View.cs" />
+    <Compile Include="SFML\System\Clock.cs" />
+    <Compile Include="SFML\System\ObjectBase.cs" />
+    <Compile Include="SFML\System\Time.cs" />
+    <Compile Include="SFML\System\Vector2.cs" />
+    <Compile Include="SFML\System\Vector3.cs" />
+    <Compile Include="SFML\Window\ContextSettings.cs" />
+    <Compile Include="SFML\Window\Event.cs" />
+    <Compile Include="SFML\Window\EventArgs.cs" />
+    <Compile Include="SFML\Window\Joystick.cs" />
+    <Compile Include="SFML\Window\Keyboard.cs" />
+    <Compile Include="SFML\Window\LoadingFailedException.cs" />
+    <Compile Include="SFML\Window\Mouse.cs" />
+    <Compile Include="SFML\Window\Sensor.cs" />
+    <Compile Include="SFML\Window\StreamAdaptor.cs" />
+    <Compile Include="SFML\Window\Touch.cs" />
+    <Compile Include="SFML\Window\VideoMode.cs" />
+    <Compile Include="SFML\Window\Window.cs" />
+    <None Include="native\csfml-audio-2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="native\csfml-graphics-2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="native\csfml-system-2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="native\csfml-window-2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="native\libsndfile-1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="native\openal32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="scripts\example.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

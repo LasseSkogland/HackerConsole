@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerConsole", "HackerConsole\HackerConsole.csproj", "{8ED2F418-3996-478C-AD45-32FAFD4187BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{0D4872A0-FA8A-41FF-BF99-193DDE56B8D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ED2F418-3996-478C-AD45-32FAFD4187BF}.Debug|x64.ActiveCfg = Debug|x64
+		{8ED2F418-3996-478C-AD45-32FAFD4187BF}.Debug|x64.Build.0 = Debug|x64
+		{8ED2F418-3996-478C-AD45-32FAFD4187BF}.Release|x64.ActiveCfg = Release|x64
+		{8ED2F418-3996-478C-AD45-32FAFD4187BF}.Release|x64.Build.0 = Release|x64
+		{0D4872A0-FA8A-41FF-BF99-193DDE56B8D7}.Debug|x64.ActiveCfg = Debug|x64
+		{0D4872A0-FA8A-41FF-BF99-193DDE56B8D7}.Debug|x64.Build.0 = Debug|x64
+		{0D4872A0-FA8A-41FF-BF99-193DDE56B8D7}.Release|x64.ActiveCfg = Release|x64
+		{0D4872A0-FA8A-41FF-BF99-193DDE56B8D7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
